@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-stripes-white {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+/* EFEK TEKS OUTLINE */
+.stroke-text {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}
+.stroke-text:hover {
+  -webkit-text-stroke: 0px;
+  color: #ffffff;
+}
+
+/* ANIMASI MUTEP PELAN */
+.animate-spin-slow {
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
